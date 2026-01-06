@@ -1,0 +1,165 @@
+2. Element is design to wrap a single piece of information
+
+Answers
+
+1. <nav>
+
+2. <time>
+
+3. <footer>
+
+4. <header>
+
+
+7. Find correct output of bellow snippet
+Int x=8;
+if(x>9) {
+document.write(9);
+} else {
+document.write(x);
+
+}
+
+Answers
+
+1.8
+
+2. 9
+
+3.0
+
+4. Undefined
+
+
+11.is an inbuilt method in jQuery used to hide the selected element.
+
+Answers
+
+1. hidden()
+
+2. hide()
+
+3. hiden()
+
+4. display(none)
+
+
+12. Which method is used to make an asynchronous HTTP request?
+
+Answers
+
+1. jQuery.ajaxAsync()
+
+2. jQuery.async()
+
+3. jQuery.ajax()
+
+4. None of the above
+
+
+14. To write "hello world" what is the correct JavaScript syntax
+
+Answers
+
+1. document.write("hello world")
+
+2. response.write("hello world")
+
+3. ("hello world")
+
+4. None of the above
+
+
+20. Which of the following is false about AJAX?
+
+Answers
+
+1. AJAX IS Asystematic Javascript and XML
+
+2. Update a web page without reloading the page
+
+3. Request and Recieve data from a server - after the page has loaded
+
+4. Send data to a server - in the background
+
+
+21. AJAX allows a web page to dynamically
+
+Answers
+
+1. Control other pages
+
+2. Change content
+
+3. Reload at times
+
+4. Connect to other addresses
+
+
+26. Which of the following tool automates various tasks of Node.js application?
+
+Answers
+
+1. Express.js
+
+2. GruntJS
+
+3. NPM
+
+4. None of the above
+
+
+29. What is Callback in NodeJS?|
+
+Answers
+
+1. The callback is an asynchronous equivalent for a function.
+
+2. The callback is a technique in which a method calls back the caller method.
+
+3. Both of the above
+
+4. None of the above
+
+34. What is the purpose of the Node object property ownerDocument?
+
+Answers
+
+1. Returns the immediate node
+
+2. Returns the parent node
+
+3. Returns the root element
+
+4. Returns the last element
+
+
+36. What is the children prompt?
+
+Answers
+
+1. A property that adds children components to state
+
+2. A property that lets you pass components as data to other components
+
+3. A property that lets you set an array as a property
+
+4. A property that lets you pass data to child elements
+
+
+40. What do you call a React component that catches JavaScript errors anywhere in the child component tree?
+
+Answers
+1. error bosses
+
+2. error catchers
+
+3. error helpers
+
+4. error boundaries
+
+
+
+
+
+

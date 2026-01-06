@@ -1,0 +1,95 @@
+8. What is the time complexity of dequeue of a queue implemented using a singly linked-list?
+
+Answers
+
+1. 0(1)
+
+2. 0(n)
+
+3. 0(log n)
+
+4. 0(n log (n))
+
+
+16. In
+
+every non-leaf node must have non-empty left subtree and non-empty right sub-tree and all leaf nodes must be exists at same level
+
+Answers
+
+1. Binary Search Tree
+
+2. Strictly Binary Tree
+
+3. Full Binary Tree
+
+4. Complete Binary Tree
+
+
+18. The distance from the farthest descendant of root node indicates
+
+Answers
+
+1. Depth of the tree
+
+2. Height of the tree
+
+3. Degree of tree
+
+4. None of the above
+
+
+
+20. All the nodes which are reachable from specified node are called as
+
+Answers
+
+1. Descendant
+
+2. Ancestor
+
+3. Leaf Node
+
+4. None of the above
+
+
+
+36. Let G be an undi|rected connected graph with distinct edge weight. Let emax be the edge with maximum weight and emin the edge with minimum weigh
+
+Answers
+
+1. Every minimum spanning tree of G must contain emin
+
+2. If emax is in a minimum spanning tree, then its removal must disconnect G
+
+3. No minimum spanning tree contains emax
+
+4. G has a unique minimum spanning tree
+
+
+37. Which of the following is/are correct statement about Asymptotic analysis?
+
+Answers
+
+1. Theta Notation is used for analyzing the average-case complexity of an algorithm.
+
+2. Omega notation represents the upper bound of the running time of an algorithm
+
+3. Big-O Notation represents the upper bound of the running time of an algorithm
+
+4. All of the above
+
+5. Both A and C
+
+
+40. What happens when the backtracking algorithm reaches a complete solution?
+
+Answers
+
+1. It backtracks to the root
+
+2. It continues searching for other possible solutions
+
+3. It traverses from a different route
+
+4. Recursively traverses through the same route

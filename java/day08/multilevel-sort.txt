@@ -1,0 +1,82 @@
+
+class Emp {
+    int id;
+    String name;
+    String job;
+    String dept;
+    double sal;
+    // ...
+}
+
+Array elements:
+3, "S", "Clerk", "Prod", 645.3
+5, "H", "Manager", "Prod", 723.2
+2, "B", "Salesman", "Sales", 752.2
+1, "A", "Manager", "Sales", 235.3
+8, "X", "Clerk", "Prod", 923.3
+7, "P", "Clerk", "Sales", 623.5
+6, "G", "Salesman", "Sales", 402.2
+
+==================================================================================
+// compare emps by dept in asc order
+class EmpDeptComparator implements Comparator<Emp> {
+    public int compare(Emp x, Emp y) {
+        int diff = x.getDept().compareTo(y.getDept());
+        return diff;
+    }
+}
+
+Arrays.sort(arr, new EmpDeptComparator());
+// output:
+3, "S", "Clerk", "Prod", 645.3
+5, "H", "Manager", "Prod", 723.2
+8, "X", "Clerk", "Prod", 923.3
+2, "B", "Salesman", "Sales", 752.2
+1, "A", "Manager", "Sales", 235.3
+7, "P", "Clerk", "Sales", 623.5
+6, "G", "Salesman", "Sales", 402.2
+
+==================================================================================
+// compare emps by dept in asc order (1st level), job in asc order (2nd level)
+class EmpDeptJobComparator implements Comparator<Emp> {
+    public int compare(Emp x, Emp y) {
+        int diff = x.getDept().compareTo(y.getDept());
+        if(diff == 0)
+            diff = x.getJob().compareTo(y.getJob());
+        return diff;        
+    }
+}
+Arrays.sort(arr, new EmpDeptJobComparator());
+
+// output:
+3, "S", "Clerk", "Prod", 645.3
+8, "X", "Clerk", "Prod", 923.3
+5, "H", "Manager", "Prod", 723.2
+7, "P", "Clerk", "Sales", 623.5
+1, "A", "Manager", "Sales", 235.3
+2, "B", "Salesman", "Sales", 752.2
+6, "G", "Salesman", "Sales", 402.2
+
+==================================================================================
+// compare emps by dept in asc order (1st level), job in asc order (2nd level), sal in desc order (3rd level)
+class EmpDeptJobSalComparator implements Comparator<Emp> {
+    public int compare(Emp x, Emp y) {
+        int diff = x.getDept().compareTo(y.getDept());
+        if(diff == 0)
+            diff = x.getJob().compareTo(y.getJob());
+        if(diff == 0)
+            diff = - Double.compare(x.getSal(), y.getSal());
+        return diff;        
+    }
+}
+
+Arrays.sort(arr, new EmpDeptJobSalComparator());
+
+// output:
+8, "X", "Clerk", "Prod", 923.3
+3, "S", "Clerk", "Prod", 645.3
+5, "H", "Manager", "Prod", 723.2
+7, "P", "Clerk", "Sales", 623.5
+1, "A", "Manager", "Sales", 235.3
+2, "B", "Salesman", "Sales", 752.2
+6, "G", "Salesman", "Sales", 402.2
