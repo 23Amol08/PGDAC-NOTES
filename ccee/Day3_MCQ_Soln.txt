@@ -1,0 +1,78 @@
+#include <stdio.h>
+int main( void )
+{
+ printf("\n%d",sizeof((int)&main)+3); 
+ return 0;
+}
+sizeof((int)&main)=> 4 bytes 
+Here, the address obtained from &main is cast to an int data type. 
+This means that the memory address is treated as an integer value.
+we are telling the compiler to interpret the address as an integer.
+so size of integer is 4 bytes 
+sizeof((int)&main) + 3 => 4 + 3 => 7 
+so o/p is 7 
+
+*************************************************************************
+#include<stdio.h>
+int main( void )
+{
+ int val1 = 0x64; // 0x64 is a hexadecimal number ( convert to decimal number ) 
+ int val2 = 064 + val1; // 064 is octal number ( convert to a decimal number) 
+ int val3 = 0x72 + 072 + 72 - val1 + val2;( after conversion perform the arithmatic operations) 
+ printf("val2=%d val3=%d\n",val2,val3);
+ return 0;
+}
+
+********************************************************************************
+
+#include<stdio.h>
+int main( void )
+{
+ int a = 100;
+ double d = 10.21;
+ printf("%d", sizeof(a+d));
+ return 0;
+}
+sizeof(a+d)
+When you add an integer (a) and a double (d), the result will be a double. 
+The sizeof operator returns the size of the data type
+In this case, when you add a + d, it comes out to be a double value 
+because int + double => double 
+and so sizeof double is 8 bytes 
+so answer is 8 bytes
+
+*************************************************************************************
+
+#include<stdio.h>
+int main( void )
+{
+printf("\n %.2f",sizeof('A' + 'a')/8.0f);
+//			4	  /8.0f 
+//				0.50 
+// so answer is 0.50   	
+
+return (0);
+}
+
+*********************************************************************************
+#include<stdio.h>
+int main(void)
+{
+ unsigned char c1='x';
+ printf("%d\t%c\t%o",c1-57,c1-'0',c1+32);
+ 
+ /*
+
+        characters are internally integral constants 
+        Here ascii value of x is 120 so c1 is 120 
+        c1 - 57 => 120 - 57 => 63 printed as %d that is integer so 63 
+        c1 - '0' => 120 - 48 => 72 printed as %c so it prints H=> ( here 72 is ascii value of H )
+        c1 + 32 => 120 + 32 =>  152 printed as %o i.e in octal format 
+        so convert 152 into octal that comes out to be 230 
+         
+ 
+ */
+ 
+ return 0;
+}
+
